@@ -26,6 +26,7 @@ jQuery(document).ready(function ($) {
     const cacheOntologies = "ontoportal-ontologies";
     const showChildsInputs = false; // true to debug
     const emptyOption = '<option></option>'; // This empty option is really important for select2 to work well with a created tag and select event triggered
+    const focusOnOpen = true;
 
     expand();
     // In metadata edition, verify if Ontoportal is up to print select HTML tag + load ontologies
@@ -487,5 +488,13 @@ jQuery(document).ready(function ($) {
         $result.append(text.substring(match + term.length));
 
         return $result;
+    }
+
+    // Focus on input text field when open select2 item
+    if (focusOnOpen) {
+        // see https://forums.select2.org/t/search-being-unfocused/1203/14
+        $(document).on("select2:open", () => {
+            document.querySelector(".select2-container--open .select2-search__field").focus();
+        });
     }
 });
