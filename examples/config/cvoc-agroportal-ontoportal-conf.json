@@ -26,8 +26,8 @@
             "vocabularyUri": "https://data.agroportal.lirmm.fr/ontologies/NCBITAXON",
             "uriSpace": "http"
         },
-        "CO_321": {
-            "vocabularyUri": "https://data.agroportal.lirmm.fr/ontologies/CO_321",
+        "GAO": {
+            "vocabularyUri": "https://data.agroportal.lirmm.fr/ontologies/GAO",
             "uriSpace": "http"
         },
         "TRANSFORMON": {
