@@ -29,6 +29,10 @@
         "TRANSFORMON": {
             "vocabularyUri": "https://data.agroportal.eu/ontologies/TRANSFORMON",
             "uriSpace": "http://opendata.inrae.fr/PO2/Ontology/TransformON/"
+        },
+        "FAKE1": {
+            "vocabularyUri": "https://data.agroportal.eu/ontologies/FAKE1",
+            "uriSpace": "http://www.ebi.ac.uk/efo/"
         }
     },
     "managed-fields": {
