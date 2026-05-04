@@ -281,7 +281,9 @@ jQuery(document).ready(function ($) {
                         url: function () {
                             let vocabsArr = [];
                             for (let key in vocabs) {
-                                vocabsArr.push(key);
+                                if (!key.startsWith("FAKE")) {
+                                    vocabsArr.push(key);
+                                }
                             }
                             // Hardcoded URL with languages: change it if needed
                             return `${cvocUrl}/search?require_exact_match=true&include_properties=true&pagesize=10&include_views=true&display_context=false&ontologies=${vocabsArr.join(",")}&lang=en,fr`;
